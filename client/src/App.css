@@ -1,0 +1,402 @@
+:root {
+    --ColorBlanco: #ffffff;
+    --ColorVerde: #44a454;
+    --ColorGris: #474747;
+    --ColorGrisClaro: rgb(224, 224, 224);
+    --ColorVerdeOscuro: rgb(31, 46, 26);
+    --ColorVerdeClaro: #a3cfac;
+
+  }
+  
+  button{
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    border:none;
+    background-color: var(--ColorGrisClaro);
+    border-radius: 20px;
+    color: var(--ColorGris);
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.737); 
+
+  }
+  
+  button:hover{
+    background-color: var(--ColorGris);
+    color: var(--ColorBlanco);
+  }
+
+  
+ 
+    .Imagen3dD{
+        width: 60px;
+        margin-left: 20px;
+    }
+  
+    
+    .CajaContenedora {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      background-color:var(--ColorGris);
+      transition: height 0.2s;
+      z-index: 1;
+  }
+  
+  
+  .CajaContenedora:hover{
+    height: 85px;
+  
+  }
+  
+  
+  a{
+  
+      text-decoration: none;
+      font-size: 20px;
+      color:var(--ColorBlanco)
+      
+  }
+
+  .descripcionP{
+    color: var(--ColorGris);
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex; 
+    align-items: center; /* Centra verticalmente */
+
+    padding: 0; 
+  }
+  
+  ul li {
+    margin-right: 10px; 
+    
+  }
+  
+  a:hover {
+    color: var(--ColorVerdeClaro);
+    border-bottom: var(--ColorVerdeClaro) solid 2px;
+  
+  }
+
+  .carritoicono{
+    color: var(--ColorVerde);
+    font-size: 35px;
+}
+
+  .carritoicono:hover{
+  color: var(--ColorVerdeClaro);
+  }
+
+  .carritoA:hover{
+    border: none;
+  }
+  
+  .aImagen3dD:hover{
+
+    border:none;
+  }
+  
+  .linkComprar:hover{
+    border:none;
+
+  }
+  
+ 
+  
+  
+  
+  
+  .GridContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) 0.5fr;
+      grid-template-rows: 80px auto auto auto auto 60px; 
+      height: 100vh;
+  }
+    
+    .GridNav {
+      grid-column: 1 / span 3;
+    }
+  
+    .GridNav:hover{
+  
+  
+    }
+    .GridMain {
+      grid-column: 1 / span 2;
+      grid-row: auto; 
+      margin: 20px;
+  
+    }
+    
+    .GridAside {
+      grid-column: 3 / span 1;
+      grid-row: auto; 
+      background-color:var(--ColorGrisClaro);
+      margin: 20px;
+      padding: 10px;
+      border-radius: 20px;
+  
+    }
+    
+    .GridFooter {
+      grid-column: 1 / span 3;
+      grid-row: 6/ 7;
+      padding: 10px;
+      background-color:var(--ColorGris);
+      color: var(--ColorBlanco);
+
+    }
+    
+    
+  
+    .FlexContainer{ 
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+  
+  .FlexItem{
+     /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(73, 73, 73); */
+      background-color:var(--ColorRojo);
+      border-radius: 2px; 
+      box-shadow: 0px 0px 5px 0px rgb(230, 221, 210);
+      margin: 20px;
+      width: 100px;
+      height: 500px;
+      min-width:250px ;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.5s;
+      align-items: flex-start;
+
+  }
+
+
+  .FlexItemItem:nth-child(4) {
+    margin-top: auto;
+}
+
+  .FlexItemItem:nth-child(5) {
+    color: var(--ColorGris);
+}
+
+
+  .FlexContainerEspecifico{ 
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgb(230, 221, 210);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+  
+  .FlexItemEspecifico{
+    /* border-style: solid;
+     border-width: 2px;
+     border-color: rgb(73, 73, 73); */
+     border-radius: 2px; 
+     margin: 20px;
+     width: 450px;
+     height: 550px;
+     min-width:350px ;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     transition: transform 0.5s;
+ 
+ }
+
+
+ .FlexContainerEspecifico .FlexItemEspecifico:nth-child(2) {
+    /* Estilos para el segundo elemento */
+    border-radius: 5px;
+    margin: 20px;
+    width: 450px;
+    border: solid 1px var(--ColorGrisClaro);
+    height: 450px;
+    min-width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s;
+}
+
+
+
+  
+  .FlexItem:hover{
+  
+     
+      transform: scale(105%);
+      position: static;    
+  }
+  
+  
+  .bottonPCarrito{
+
+    border-radius: 1px;
+  }
+  
+  
+  
+  .FlexItem h3{
+    margin-bottom: 20px;
+  }
+  
+    
+  
+  .FlexItem img{
+    width:250px;
+    
+  }
+  
+  body{
+    background-color: var(--ColorBlanco);
+  }
+
+
+  .masvendidosImg{
+    width: 75vw;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0);
+    padding-right: 40px;
+
+  }
+
+  .FlexContainerIniciar{
+
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgb(230, 221, 210);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+  
+
+  .FlexItemIniciar{
+
+    border-radius: 2px; 
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .FlexItemIniciar label{
+
+    padding-left: 0px; 
+
+  }
+
+  .FlexContainerIniciar img{
+
+    padding: 0px;
+    height: 350px;
+
+    border-radius: 100px;
+
+  }
+
+  .FlexItemIniciar .linkForm{
+
+    color: var(--ColorVerde);
+    font-size: 15px;
+    border-bottom: solid 1px var(--ColorVerde);
+    display: inline-block;
+  }
+
+  .FlexItemIniciar .linkForm:hover{
+    color: var(--ColorVerdeClaro);
+    border-bottom: solid 1px var(--ColorVerdeClaro);
+
+
+  }
+  .FlexItemIniciar P{
+    display: inline-block;
+
+    font-size: 15px;
+  }
+  
+  .FlexItemCarrito{
+    display: flex;
+    padding: 1px;
+    border-bottom: solid 2px var(--ColorVerdeClaro);
+  }
+
+  .FlexContainerCarrito{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .FlexItemCarrito p{
+    padding: 10px;
+    margin: 0;
+
+
+  }
+
+ .FlexContainerCarritoIndex .parrafo{
+    padding-right: 60px;
+    color: var(--ColorGris);
+}
+
+.FlexContainerCrearArticulo{
+
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  
+}
+
+.FlexItemCrearArticulo{
+
+  margin-bottom: 20px;
+
+}
+
+.FlexItemEspecificoImg{
+  height: 400px;
+  margin: 20px;
+
+}
+
+.FlexContainerAside{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+
+}
+
+.FlexItemAside{
+  margin-left: 10px;
+}
+
+.FlexItemAside:hover{
+  border: none;
+}
